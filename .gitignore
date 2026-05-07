@@ -1,0 +1,8 @@
+node_modules
+build
+package-lock.json
+data/election-state.json
+data/voters.json
+.env
+__pycache__
+.venv

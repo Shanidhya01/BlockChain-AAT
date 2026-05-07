@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VoteVault - Stellar Voting</title>
+  <link rel="stylesheet" type="text/css" href="../css/login.css">
+</head>
+<body>
+  <h1>🔐 VoteVault</h1>
+  <div class="container">
+    <h2 style="color: #333; font-size: 1.5rem; margin-bottom: 0.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Secure Blockchain Voting on Stellar</h2>
+    <p style="color: #667eea; margin-bottom: 2rem; font-weight: 500; font-size: 0.95rem;">🚀 Decentralized • 🔒 Secure • 📊 Transparent</p>
+
+    <div style="margin-bottom: 1.5rem; padding: 1rem; background: linear-gradient(135deg, #f0f4ff 0%, #f9f5ff 100%); border-radius: 12px; border: 1px solid #e0e7ff;">
+      <p style="color: #667eea; font-size: 0.85rem; font-weight: 600; margin: 0 0 0.75rem;">💼 Stellar Wallet Integration</p>
+      <button type="button" id="freighterConnect" style="width: 100%; padding: 0.75rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 10px; cursor: pointer; font-weight: 600; font-size: 0.9rem; transition: all 0.3s ease;">🔗 Connect Freighter Wallet</button>
+      <p id="freighterStatus" style="color: #667eea; margin-top: 0.75rem; font-size: 0.85rem; min-height: 1.2rem; text-align: center;"></p>
+    </div>
+
+    <hr style="border: none; border-top: 1px solid #e0e0e0; margin: 1.5rem 0;">
+
+    <form id="loginForm">
+      <h3 style="color: #333; text-align: left; margin-bottom: 1.5rem; font-size: 1.1rem; font-weight: 700;">👤 Demo Login</h3>
+      <div class="form-group">
+        <label for="voter-id" style="display: block; text-align: left; color: #333; font-weight: 600; font-size: 0.9rem; margin-bottom: 0.5rem;">Username</label>
+        <input type="text" class="form-control" id="voter-id" name="voter-id" placeholder="Enter your username" required>
+      </div>
+      <div class="form-group">
+        <label for="password" style="display: block; text-align: left; color: #333; font-weight: 600; font-size: 0.9rem; margin-bottom: 0.5rem;">Password</label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+      </div>
+      <button type="submit" class="btn btn-primary" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); width: 100%; padding: 1rem; color: white; border: none; border-radius: 12px; font-weight: 700; cursor: pointer; transition: all 0.3s ease; text-transform: uppercase; font-size: 0.9rem;">✓ Login</button>
+    </form>
+    <p id="loginError" style="color: #dc2626; margin-top: 1rem; font-weight: 500;"></p>
+
+    <hr style="border: none; border-top: 1px solid #e0e0e0; margin: 1.5rem 0;">
+
+    <div style="text-align: left; background: #f8f9fa; padding: 1rem; border-radius: 10px;">
+      <p style="color: #333; font-size: 0.85rem; margin-bottom: 0.75rem; font-weight: 700;">📋 Demo Credentials:</p>
+      <div style="background: white; padding: 0.75rem; border-radius: 8px; margin-bottom: 0.5rem; border-left: 3px solid #667eea;">
+        <p style="color: #333; font-size: 0.9rem; margin: 0;">👨‍💼 <strong>Admin:</strong> <code style="background: #f0f4ff; padding: 0.25rem 0.5rem; border-radius: 4px;">admin001</code> / <code style="background: #f0f4ff; padding: 0.25rem 0.5rem; border-radius: 4px;">admin123</code></p>
+      </div>
+      <div style="background: white; padding: 0.75rem; border-radius: 8px; border-left: 3px solid #764ba2;">
+        <p style="color: #333; font-size: 0.9rem; margin: 0;">🗳️ <strong>Voter:</strong> <code style="background: #f0f4ff; padding: 0.25rem 0.5rem; border-radius: 4px;">voter001</code> / <code style="background: #f0f4ff; padding: 0.25rem 0.5rem; border-radius: 4px;">voter123</code></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="/vendor/freighter-api.js"></script>
+  <script src="../js/animations.js"></script>
+  <script src="../js/login.js" type="module"></script>
+</body>
+</html>
